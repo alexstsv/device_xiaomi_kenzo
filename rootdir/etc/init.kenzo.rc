@@ -27,7 +27,7 @@
 #
 #
 
-on post-fs data
+on post-fs-data
     mkdir /data/goodix 0700 system system
 
 on boot
@@ -53,4 +53,4 @@ on property:persist.sys.fp.goodix=0
     stop gx_fpd
 
 on property:persist.sys.fp.goodix=1
-    start gx_fpd
+    enable gx_fpd
